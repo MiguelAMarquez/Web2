@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+	<div class= "container">
+		<div class="row">
+			<div>
+				<form action="registration" method="post" >
+				
+					<div class= "form-row">
+					
+						<h1>Miguel Márquez</h1>
+						<h2>Proyecto 1: Registro </h2>
+					
+					</div>
+					
+					<div class= "col-md-4 mb-3">
+						<label>Nombre</label>
+						<input type="text" class="form-control" id="fname" name="fname" placeholder="Nombre" pattern="[Aa-Zz]+" required>
+						<p>El nombre debe estar compuesto de solo caracteres y no contener mas de 15</p>
+					</div>
+					<div class= "col-md-4 mb-3">
+						<label>Apellido</label>
+						<input type="text" class="form-control" id="lname" name="lname" placeholder="Apellido" pattern="[Aa-Zz]+" required>
+						<p>El apellido debe estar compuesto de solo caracteres y no contener mas de 15</p>
+					</div>
+					<div class= "col-md-4 mb-3">
+						<label>E-Mail</label>
+						<input type="text" class="form-control" id="mail" name="mail" placeholder="E-Mail" required>
+					</div>
+					<div class= "col-md-4 mb-3">
+						<label>Telefono</label>
+						<input type="text" class="form-control" id="phone" name="phone" placeholder="Telefono" required>
+						<p>El telefono debe estar compuesto de solo numeros y no incluir mas de 50 y minimo 7</p>
+					</div>
+					<div class= "col-md-4 mb-3">
+						<label>Edad (debe ser mayor de edad)</label>
+						<input type="number" class="form-control" id="age" name="age" placeholder="Edad" min="18" max="100" required>
+					</div>
+					<div class= "col-md-4 mb-3">
+						<label>Password</label>
+						<input type="Password" class="form-control" id="pass" name="pass" placeholder="Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
+						<p>Debe tener al menos un numero, una mayuscula, una minuscula y no menos de 8 caracteres</p>
+					</div>
+					<div class= "btn btn-primary">
+					
+						<button type="submit" class="btn btn-primary">Submit</button>
+						
+					</div>
+					
+					
+				
+				</form>
+				
+			
+			</div>
+		
+		
+		</div>
+	
+	
+	
+	</div>
+
+</body>
+</html>
